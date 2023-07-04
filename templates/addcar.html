@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block page_title %}Add Driver{% endblock %}
+
+{% block page_content %}
+
+<center>
+<h1>Add Car</h1>
+<br>
+<form class="form-horizontal col-md-4"  method="Post">
+  {% csrf_token %}
+    <div class="form-group ">
+      <label for="carmake">Make :</label>
+      <input type="text" class="form-control" name="carmake" id="carmake">
+    </div>
+    <div class="form-group">
+      <label for="carmodel">Model:</label>
+      <input type="text" class="form-control" name="carmodel" id="carmodel">
+    </div>
+    <div class="form-group">
+      <label for="caryear">Manufacturer year:</label>
+      <input type="text" class="form-control" name="caryear" id="caryear">
+    </div>
+    <div class="form-group">
+      <label for="carvin">vehicle identification number (VIN):</label>
+      <input type="text" class="form-control" name="carvin" id="carvin">
+    </div>
+    
+    <div class="form-group">
+      <label for="cardriver">Drivers</label>
+      <select name="cardriver" class="form-control">
+        {% for driver in drivers %}
+        <option  value="{{driver.pk}}" >{{driver.name}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</center>
+
+{% endblock %}

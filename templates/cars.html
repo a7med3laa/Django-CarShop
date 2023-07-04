@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block page_title %}List all Cars{% endblock %}
+
+{% block page_content %}
+
+<center><h1>ALL Cars</h1></center>
+        <div class="mw6 center pa3 sans-serif">
+            {% for v in vehicles %}
+            <div class="pa2 mb3 striped--near-white">
+                <div class="pl2">
+                    <h3 class="mb4">Make/Model: 
+                        {{ v.make }} {{ v.model }}</h3>
+                    <p class="mb2">Year: {{ v.year }}</p>
+                    <p class="mb2">Vin: {{ v.vin }}</p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+
+{% endblock %}

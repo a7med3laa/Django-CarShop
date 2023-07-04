@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block page_title %}List all Drivers{% endblock %}
+
+{% block page_content %}
+
+<div class="container">
+<center><h1>ALL Drivers</h1></center>
+<br>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Driver name</th>
+        <th scope="col">License</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for driver in drivers %} 
+      <tr>
+        <td>{{ driver.pk}}</td>
+        <td><a href="{%url 'car_detail' driver.pk%}">{{ driver.name}}   
+        </a></td>
+        <td>{{ driver.license }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+</table>
+</div>
+<br>
+<br>
+<br>
+{% endblock %}
