@@ -1,6 +1,6 @@
 # Django-CarShop
 
-My first Django project
+Simple Django project
 
 ------------
 
