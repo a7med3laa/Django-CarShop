@@ -31,10 +31,8 @@ Convert the folder to a virtual environment
 `virtualenv venv`
 
 To begin with Django, you first need to activate virtualenv
-- The command to activate 
-`venv\Scripts\activate`
-- The command to deactivate
-`venv\Scripts\deactivate.bat`
+   - The command to activate    `venv\Scripts\activate`
+   - The command to deactivate  `venv\Scripts\deactivate.bat`
 
 - Install Django
 
