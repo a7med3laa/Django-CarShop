@@ -24,31 +24,35 @@ clone repo and open the command line in the folder directory and install virtual
 
 1. Virtual Environment
 
-download virtual environment
-`pip install virtualenv`
+   Download and install virtual environment
+   `pip install virtualenv`
 
-Convert the folder to a virtual environment
-`virtualenv venv`
+   Convert the folder to a virtual environment
+   `virtualenv venv`
 
-To begin with Django, you first need to activate virtualenv
-   - The command to activate    `venv\Scripts\activate`
-   - The command to deactivate  `venv\Scripts\deactivate.bat`
+   To begin with Django, you first need to activate virtualenv
+      - The command to activate    `venv\Scripts\activate`
+      - The command to deactivate  `venv\Scripts\deactivate.bat`
 
 2. Install Django
 
-`pip install Django`
+   `pip install Django`
 
 3. Install PostgreSQL
 
-Install Postgres and create DB called Car and update the setting.py file with your password then run the following commands in CMD
+   Install Postgres and create DB called Car and update the setting.py file with your password then run the following commands in CMD
 
-`pip install psycopg2-binary `
+   `pip install psycopg2-binary `
 
-To provide connection to postgre
+   To provide a connection to PostgreSQL
 
-`Py manage.py makemigrations `
+   `Py manage.py makemigrations `
 
-`Py manage.py migrate`
+   `Py manage.py migrate`
 
-To update the project and create tables in model.py to Car DB
+   To update the project and create tables in model.py to Car DB
+
+4. Run the project
+
+   `Py manage.py runserver`   
 
