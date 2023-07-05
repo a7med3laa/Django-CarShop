@@ -22,7 +22,7 @@ Create a project called myproject that has a Cars App that includes:
 
 clone repo and open the command line in the folder directory and install virtualenv and Django
 
-- Virtual Environment
+1. Virtual Environment
 
 download virtual environment
 `pip install virtualenv`
@@ -34,15 +34,16 @@ To begin with Django, you first need to activate virtualenv
    - The command to activate    `venv\Scripts\activate`
    - The command to deactivate  `venv\Scripts\deactivate.bat`
 
-- Install Django
+2. Install Django
 
 `pip install Django`
 
-- Install PostgreSQL
+3. Install PostgreSQL
 
 Install Postgres and create DB called Car and update the setting.py file with your password then run the following commands in CMD
 
 `pip install psycopg2-binary `
+
 To provide connection to postgre
 
 `Py manage.py makemigrations `
