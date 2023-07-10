@@ -40,7 +40,7 @@ clone repo and open the command line in the folder directory and install virtual
 
 3. Install PostgreSQL
 
-   Install Postgres and create DB called Car and update the setting.py file with your password then run the following commands in CMD
+   Install Postgres [here](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/) and create DB called Car and update the setting.py file with your password then run the following commands in CMD
 
    `pip install psycopg2-binary `
 
