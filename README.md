@@ -15,6 +15,8 @@ Create a project called myproject that has a Cars App that includes:
 
 3. Template folder as HTML files
 
+4. Static folder for images and CSS files
+
 ------------
 
 
