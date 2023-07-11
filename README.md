@@ -1,6 +1,6 @@
 # Django-CarShop
 
-Simple Django project
+A simple Django project can be used as a tutorial for the Django framework and its architecture. The application shows how to connect with PostgreSQL DB and how to store and retrieve data from it.
 
 ------------
 
